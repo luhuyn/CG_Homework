@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>Student Registration</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="2"><h3>Student Registration</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Full Name</label>
+                </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Date of Birth</label>
+                </td>
+                <td>
+                    <input type="date" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender">
+                    <label for="gender">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <input type="text" name="address" id="address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="class">Class</label>
+                </td>
+                <td>
+                   <select id="class" name="class">
+                       <option> -Choose a class- </option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Phone Number</label>
+                </td>
+                <td>
+                    <input type="tel" name="phone">
+                </td>
+            </tr>        
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button">Register</button>
+                    <input type="reset" name="Input again" id="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

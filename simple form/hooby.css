@@ -1,0 +1,23 @@
+body{
+    font-family:Courier;
+}
+form{
+    width:fit-content;
+    height:fit-content;
+    margin: 0 auto;
+    border: 1px solid white;
+    background-color: #FFE1AF;
+}
+table{
+    margin:10px;
+    background-color: white;
+}
+h3{
+    margin-top: 0;
+    background-color: #FFC898;
+    color:white;
+    text-align: center;
+}
+.hobbies{
+    color:#F7D59C;
+}
