@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="registration" name ="registration">
+        <div>
+            <label for="name">Full Name:</label> <br>
+            <input type="text" id="name" name="name"> <br>
+        </div>
+
+        <div>
+            <label for="email">Email:</label> <br>
+            <input type="email" id="email" name ="email"> <br>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number:</label> <br>
+            <input type="tel" id="phone" name ="phone"> <br>
+        </div>
+
+        <div>  
+            <label for ="gender">Gender:</label> <br>
+            <input type ="radio" id="male" name="gender" checked>
+            <label for ="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label> <br>
+        </div>
+        
+        <div>
+            <button type="button">Register</button>
+        </div>
+    </form>
+</body>
+</html>

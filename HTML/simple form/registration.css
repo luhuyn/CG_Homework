@@ -1,0 +1,19 @@
+form{
+    margin: 0 auto;
+    border: 1px solid white;
+    width:500px;
+    height:fit-content;
+    background-color: #87A8A4;
+    font-family:'Courier New', Courier, monospace;
+}
+h3{
+    margin-top:0;
+    background-color: #CEE5D0;
+    width:495px;
+}
+button{
+    background-color: grey;
+}
+#reset{
+    background-color: grey;
+}
