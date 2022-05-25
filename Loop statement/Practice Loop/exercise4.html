@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function ex4() {
+        let num1 = 0;
+        let num2 = 1;
+        let result;
+        while(true) {
+            if (num2 % 5 == 0) {
+                result = num2;
+                break;
+            }
+            let add = (num1 + num2);
+            num1 = num2;
+            num2 = add;
+        }
+        document.write("The first Fibonacci number that is divisible by 5 is: " + result);
+    }
+    ex4();
+</script>
+</html>
