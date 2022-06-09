@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert feet and meters</title>
+</head>
+<body>
+    <label for="inputValue"> Input: <input type="number" id="inputValue"></label>
+    <select id="feetOrMeters">
+        <option value="feet">Feet to Meters</option>
+        <option value="meters">Meters to Feet</option>
+    </select>
+    <button onclick="processChoice(document.getElementById('feetOrMeters').value)">Convert</button>
+    <h3 id="result"></h3>
+</body>
+<script>
+    function feetToMeters(feet){
+        return (0.305 * feet).toFixed(3);
+    }
+
+    function metersToFeet(meters){
+        return (3.279 * meters).toFixed(3);
+    }
+
+    function processChoice(choice){
+        let result = document.getElementById("result");
+        switch (choice){
+            case "feet":
+                result.innerText = "Meters: " + feetToMeters(document.getElementById("inputValue").value);
+                break;
+            case "meters":
+                result.innerText = "Feet: " + metersToFeet(document.getElementById("inputValue").value);
+                break;
+        }
+    }
+</script>
+</html>
