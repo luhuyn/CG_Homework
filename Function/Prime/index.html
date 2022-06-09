@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src ="script.js" defer ="true"></script>
+</head>
+<body>
+    <h1>Prime numbers from 0 to the number you input</h1>
+    <label for="input-number">Input a random integer: <input type="text" id="input-number"></label>
+    <button onclick="searchPrimes(parseInt(document.getElementById('input-number').value))">Search</button>
+    <h3>Primes Array: <p id="display"></p></h3>
+</body>
+</html>

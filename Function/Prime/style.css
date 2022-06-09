@@ -1,0 +1,17 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-flow: column wrap;
+}
+h3 {
+    width: 100%;
+}
+p {
+    word-break: break-all;
+    white-space: normal;
+}
+button {
+    width: fit-content;
+}
