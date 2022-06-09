@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Function</title>
+    <script src ="script.js" defer ="true"></script>
+</head>
+<body>
+    <h1>Practice Functions</h1>
+    <div>
+        <p>
+            <select id="exercises" onchange="changeLabel(+document.getElementById('exercises').value)">
+                <option value="0">Select an exercise</option>
+                <option value="1">Exercise 1</option>
+                <option value="2">Exercise 2</option>
+                <option value="3">Exercise 3</option>
+                <option value="4">Exercise 4</option>
+                <option value="5">Exercise 5</option>
+                <option value="6">Exercise 6</option>
+                <option value="7">Exercise 7</option>
+                <option value="8">Exercise 8</option>
+                <option value="9">Exercise 9</option>
+                <option value="10">Exercise 10</option>
+            </select>
+        </p>
+        <h3 id="title" style = "display: none; width: 500px; text-align: justify;"></h3>
+        <p><label for="input1" style="display: none;"></label><input type="text" id="input1" style="display: none;"></p>
+        <p><label for="input2" style="display: none;"></label><input type="text" id="input2" style="display: none;"></p>
+        <p><label for="input3" style="display: none;"></label><input type="text" id="input3" style="display: none;"></p>
+        <p>
+            <button id="process-exercise" style="display: none;" onclick="processExercise(+document.getElementById('exercises').value)">Perfom the selected exercise</button>
+        </p>
+    </div>
+    <h4 id="starsList" style="display: none;">Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus.</h4>
+    <h2 id = "result"></h2>
+</body>
+</html>
