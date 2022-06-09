@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symmetry Check</title>
+</head>
+<body>
+    <h1>Symmetry Check(Palindrome)</h1>
+    <input type="text" id="inputstr">
+    <button onclick="display()">Check</button>
+    <h2 id="display"></h2>
+</body>
+<script>
+    function isPalindrome(str) {
+        console.log(`Current string: ${str}`);
+        if(str.length == 0 || str.length == 1){
+            return true;
+        }
+        else {
+            console.log(`Compare to: ${str.charAt(0)} - ${str.charAt(str.length-1)}`);
+            if(str.charAt(0) == str.charAt(str.length-1)) {
+                str = str.substring(1, str.length-1);   
+                return isPalindrome(str);                  
+            } else {
+                return false;
+            }
+        }
+    }
+    function display(){
+        let display = document.getElementById("display");
+        let str = document.getElementById("inputstr").value;
+        display.innerText = isPalindrome(str) ? `"${str}" is a word of symmetry!` : `"${str}" isn't a word of symmetry!!`;
+    }
+</script>
+</html>
